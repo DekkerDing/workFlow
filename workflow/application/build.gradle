@@ -1,5 +1,5 @@
 dependencies {
-
+    api project(':interfaces')
 }
 
 tasks.named('test') {
