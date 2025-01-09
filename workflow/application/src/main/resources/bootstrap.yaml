@@ -6,8 +6,20 @@ spring:
     datasource:
         url: jdbc:h2:file:./camunda-h2-databases
 
+
 camunda:
     bpm:
         admin-user:
             id: demo
             password: demo
+        eventing:
+            execution: true
+            history: true
+            task: true
+            skippable: true
+        database:
+            type: h2
+            schema-update: true
+        auto-deployment:
+            enabled: false
+        history-level: audit
