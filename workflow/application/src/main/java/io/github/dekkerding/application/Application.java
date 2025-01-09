@@ -1,13 +1,13 @@
-package io.github.dekkerding.workflow;
+package io.github.dekkerding.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WorkflowApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(WorkflowApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }

@@ -1,10 +1,10 @@
-package io.github.dekkerding.workflow;
+package io.github.dekkerding.application;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WorkflowApplicationTests {
+class ApplicationTests {
 
     @Test
     void contextLoads() {

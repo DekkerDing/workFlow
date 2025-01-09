@@ -35,6 +35,12 @@ ext.versions = [
     disruptor : '3.4.4',
     reactor : '2022.0.9',
     jasper : '11.0.0-M20',
+    camunda : '7.17.0',
+    camundaCommons : '1.10.0',
+    camundaCommonsUtils : '1.10.0',
+    javassist : '3.25.0-GA',
+    asm : '9.1',
+
 
     //Azure
     identity : '1.13.2',
@@ -70,6 +76,13 @@ ext.libraries = [
 "zxing":"com.google.zxing:core:${versions.zxingCore}",
 "jasypt-spring-boot-starter":"com.github.ulisesbocchio:jasypt-spring-boot-starter:${versions.jasyptSpringBootStarter}",
 "dynamic-datasource-spring-boot-starter":"com.baomidou:dynamic-datasource-spring-boot-starter:${versions.dynamicDatasource}",
+"camunda-bpm-spring-boot-starter":"org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter:${versions.camunda}",
+"camunda-bpm-spring-boot-starter-webapp":"org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:${versions.camunda}",
+"camunda-bpm-spring-boot-starter-rest":"org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest:${versions.camunda}",
+"camunda-commons-logging":"org.camunda.commons:camunda-commons-logging:${versions.camundaCommons}",
+"camunda-commons-utils":"org.camunda.commons:camunda-commons-utils:${versions.camundaCommonsUtils}",
+"javassist":"org.javassist:javassist:${versions.javassist}",
+"asm":"org.ow2.asm:asm:${versions.asm}",
 
 // SpringBoot
 
@@ -84,6 +97,9 @@ ext.libraries = [
 "spring-boot-devtools":"org.springframework.boot:spring-boot-devtools:${versions.springBoot}",
 "spring-boot-starter-test":"org.springframework.boot:spring-boot-starter-test:${versions.springBoot}",
 "spring-boot-autoconfigure-processor":"org.springframework.boot:spring-boot-autoconfigure-processor:${versions.springBoot}",
+"spring-web":"org.springframework:spring-web:${versions.springFramework}",
+"spring-core":"org.springframework:spring-core:${versions.springFramework}",
+"spring-aop":"org.springframework:spring-aop:${versions.springFramework}",
 ]
 
 ext.imports = [
@@ -92,4 +108,6 @@ ext.imports = [
     "spring-cloud-dependencies":"org.springframework.cloud:spring-cloud-dependencies:${versions.springCloud}",
     "spring-cloud-alibaba-dependencies":"com.alibaba.cloud:spring-cloud-alibaba-dependencies:${versions.springCloudAlibaba}",
     "reactor-bom":"io.projectreactor:reactor-bom:${versions.reactor}",
+    "jackson-bom":"com.fasterxml.jackson:jackson-bom:${versions.jackson}",
+    "camunda-engine":"org.camunda.bpm:camunda-engine:${versions.camunda}",
 ]
