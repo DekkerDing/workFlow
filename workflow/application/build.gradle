@@ -1,3 +1,5 @@
+description '应用程序'
+
 dependencies {
     api project(':interfaces')
 }

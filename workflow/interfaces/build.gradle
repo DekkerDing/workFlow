@@ -1,6 +1,9 @@
+description '外部接口扩展'
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     api 'org.springframework.boot:spring-boot-starter-web'
+    implementation project(':infrastructure')
 }
 
 tasks.named('test') {

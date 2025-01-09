@@ -1,22 +1,61 @@
+description '基础设施'
+
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation ('org.springframework.boot:spring-boot-starter-data-jpa'){
+        transitive(true)
+    }
 
     // https://mvnrepository.com/artifact/org.camunda.bpm.springboot/camunda-bpm-spring-boot-starter
-    implementation "org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter"
+    implementation ('org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter'){
+        transitive(true)
+    }
     // https://mvnrepository.com/artifact/org.camunda.bpm.springboot/camunda-bpm-spring-boot-starter-webapp
-    implementation "org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp"
+    implementation ('org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp'){
+        transitive(true)
+    }
     // https://mvnrepository.com/artifact/org.camunda.bpm.springboot/camunda-bpm-spring-boot-starter-rest
-    implementation "org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest"
+    implementation ('org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest'){
+        transitive(true)
+    }
     // https://mvnrepository.com/artifact/org.camunda.bpm/camunda-engine-plugin-spin
-    implementation 'org.camunda.bpm:camunda-engine-plugin-spin'
+    implementation ('org.camunda.bpm:camunda-engine-plugin-spin'){
+        transitive(true)
+    }
     // https://mvnrepository.com/artifact/org.camunda.spin/camunda-spin-dataformat-all
-    implementation 'org.camunda.spin:camunda-spin-dataformat-all'
-    implementation "org.javassist:javassist"
-    implementation "org.ow2.asm:asm"
-    implementation "org.camunda.commons:camunda-commons-logging"
-    implementation "org.camunda.commons:camunda-commons-utils"
+    implementation ('org.camunda.spin:camunda-spin-dataformat-all'){
+        transitive(true)
+    }
+//    implementation ('org.javassist:javassist'){
+//        transitive(false)
+//    }
+//    implementation ('org.ow2.asm:asm'){
+//        transitive(false)
+//    }
+//    implementation ('org.camunda.commons:camunda-commons-logging'){
+//        transitive(true)
+//    }
+//    implementation ('org.camunda.commons:camunda-commons-utils'){
+//        transitive(true)
+//    }
 
-    api project(":domain")
+    implementation project(":domain")
+
+    implementation 'com.h2database:h2'
+
+    // https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api
+    implementation 'javax.ws.rs:javax.ws.rs-api'
+
+    // https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api
+    implementation 'javax.annotation:javax.annotation-api'
+
+    // https://mvnrepository.com/artifact/javax.validation/validation-api
+    implementation 'javax.validation:validation-api'
+
+
+    // https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator
+    implementation 'org.hibernate.validator:hibernate-validator'
+
+
 }
 
 tasks.test {
