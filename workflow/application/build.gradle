@@ -1,7 +1,8 @@
 description '应用程序'
 
 dependencies {
-    api project(':interfaces')
+    implementation project(':interfaces')
+    implementation project(':infrastructure')
 }
 
 tasks.named('test') {

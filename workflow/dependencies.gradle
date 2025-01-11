@@ -111,4 +111,5 @@ ext.imports = [
     "reactor-bom":"io.projectreactor:reactor-bom:${versions.reactor}",
     "jackson-bom":"com.fasterxml.jackson:jackson-bom:${versions.jackson}",
     "camunda-engine":"org.camunda.bpm:camunda-engine:${versions.camunda}",
+    "camunda-bom":"org.camunda.bpm:camunda-bom:${versions.camunda}",
 ]

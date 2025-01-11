@@ -1,6 +1,8 @@
 description '领域模型'
 
 dependencies {
+
+    implementation project(':infrastructure')
 }
 
 tasks.named('test') {

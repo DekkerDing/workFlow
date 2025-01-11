@@ -42,7 +42,13 @@ dependencies {
         transitive(true)
     }
 
-    implementation project(":domain")
+    implementation ('org.camunda.bpm:camunda-engine-plugin-connect'){
+        transitive(true)
+    }
+
+    implementation ('org.camunda.connect:camunda-connect-core'){
+        transitive(true)
+    }
 
     implementation 'com.h2database:h2'
 

@@ -1,4 +1,4 @@
-package io.github.dekkerding.application.event;
+package io.github.dekkerding.infrastructure.event;
 
 import org.camunda.bpm.spring.boot.starter.event.TaskEvent;
 import org.springframework.context.event.EventListener;
