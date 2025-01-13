@@ -74,10 +74,6 @@ ext.libraries = [
     "zxing":"com.google.zxing:core:${versions.zxingCore}",
     "jasypt-spring-boot-starter":"com.github.ulisesbocchio:jasypt-spring-boot-starter:${versions.jasyptSpringBootStarter}",
     "dynamic-datasource-spring-boot-starter":"com.baomidou:dynamic-datasource-spring-boot-starter:${versions.dynamicDatasource}",
-    "camunda-bpm-spring-boot-starter":"org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter:${versions.camunda}",
-    "camunda-bpm-spring-boot-starter-webapp":"org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:${versions.camunda}",
-    "camunda-bpm-spring-boot-starter-rest":"org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest:${versions.camunda}",
-    "camunda-bpm-spring-boot-starter-external-task-client":"org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-external-task-client:${versions.camunda}",
     "javassist":"org.javassist:javassist:${versions.javassist}",
     "asm":"org.ow2.asm:asm:${versions.asm}",
     // SpringBoot

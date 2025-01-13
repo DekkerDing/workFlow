@@ -1,6 +1,7 @@
 description '应用程序'
 
 dependencies {
+    implementation project(':domain')
     implementation project(':interfaces')
     implementation project(':infrastructure')
 }
